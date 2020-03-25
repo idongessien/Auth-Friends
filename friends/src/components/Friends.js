@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import moment from "moment";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import Friend from "./Friend";
 import AddAFriendForm from "./AddAFriendForm";
@@ -31,7 +30,7 @@ function Friends() {
 
   return (
     <div>
-      <h1>Say Hi to all of your Friends!</h1>
+      <h1>Meet Your Friends!</h1>
       <div className="friends">
         {friends.map(friend => {
           return <Friend key={friend.id} friend={friend} />;

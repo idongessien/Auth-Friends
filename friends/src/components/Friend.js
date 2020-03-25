@@ -12,7 +12,7 @@ function Friend(props) {
     axiosWithAuth()
       .delete(`/api/friends/${friend.id}`)
       .then(res => {
-        alert("Congrats you lost another friend");
+        alert("Oh no ! You lost a friend 😩");
         console.log("deleted", res);
       })
       .catch(err => console.log("error deleting friend", err))
